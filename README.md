@@ -17,8 +17,16 @@ pip install sbis-api-client
 # Пример кода
 ```py
 from sbis_api_client import SbisClient
+# Все данные являются тестовыми
+client = SbisClient(
+        clientId="7760676789310629",
+        secret="RWHREDMVWJDHYFZO0CM83MHF",
+        secretKey="B9PT47e2j3JGwsswHAzHaU5ssyzoqHsIYFHLjtZYQhlqV8U7eIkF5VIYluyrGwugVv7g1dWRcbSnoCzk10gq961GdzfpUD7INYZiS0wR8K1lrbVwkMjvqi"
+    )
 
-# Функции в разработке
+client.authenticate() # Авторизация
+client.data()  # Данные клиента
+client.logout() # Выход
 ```
 
 # Лицензия
