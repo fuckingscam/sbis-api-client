@@ -14,6 +14,13 @@ sbis-api-client — это Python-библиотека, предназначен
 pip install sbis-api-client
 ```
 
+# Пример кода
+```py
+from sbis_api_client import SbisClient
+
+# Функции в разработке
+```
+
 # Лицензия
 Этот проект распространяется под лицензией MIT. Подробности см. в файле LICENSE.
 
