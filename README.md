@@ -16,7 +16,7 @@ pip install sbis-api-client
 
 # Пример кода
 ```py
-from sbis_api_client import SbisClient
+from sbis import SbisClient
 # Все данные являются тестовыми
 client = SbisClient(
         clientId="7760676789310629",
