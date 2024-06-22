@@ -28,10 +28,9 @@ client.authenticate() # Выполняет аутентификацию поль
 client.data() # Выводит данные текущего состояния клиента.
     
 points = client.get_points() # Возвращает список точек продаж с учетом заданных параметров.
-pricelist = client.get_priceList(pointId=332, actualDate='21.06.24') # Запрос возвращает информацию о действующих прайс-листах. Чтобы запрос работал корректно, настройте прайс-лист с типом «Выбранные наименования».
-nomenclatures = client.get_nomenclatureList(pointId=332, priceListId=33) # Запрос возвращает информацию о товарах и услугах по действующему прайс-листу.
-response = client.get_nomenclature_balances(nomenclatures=[123, 321], warehouses=[456, 789], companies=444) # Запрос возвращает информацию об остатках товаров на складе.
-
+pricelist = client.get_priceList(pointId=206, actualDate='2020-09-07') # Запрос возвращает информацию о действующих прайс-листах. Чтобы запрос работал корректно, настройте прайс-лист с типом «Выбранные наименования».
+nomenclatures = client.get_nomenclatureList(pointId=123, priceListId=555) # Запрос возвращает информацию о товарах и услугах по действующему прайс-листу.
+nomenclature_balances = client.get_nomenclature_balances(nomenclatures=[123, 321], warehouses=[456, 789], companies=444) # Запрос возвращает информацию об остатках товаров на складе.
 bonus_user = client.get_bonus_client(phone=89207444555, pointId=332)
     
 client.logout() # Выполняет выход пользователя из системы, завершая использование текущего токена доступа.
